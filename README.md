@@ -1,9 +1,9 @@
 # sample_api
 RESTfull APIs with Django Ninja
 
-Run Project by the following steps:
-1: Clone the Project
-2: create virtual environment with <b>pipenv shell</b>
-3: install dependencies run <b>pipenv install </b>
-4: run project by python manage.py runserver
-4: visit 127.0.0.1:8000/api/docs to view APIs
+Run Project by the following steps:<br>
+1: Clone the Project<br>
+2: create virtual environment with <b>pipenv shell</b><br>
+3: install dependencies run <b>pipenv install </b><br>
+4: run project by <b>python manage.py runserver</b><br>
+4: visit http://127.0.0.1:8000/api/docs to view APIs
