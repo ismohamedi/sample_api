@@ -1,4 +1,4 @@
-# sample_api
+# sample_api -  RESTful APIs with Django Ninja
 RESTfull APIs with Django Ninja
 
 Run Project by the following steps:<br>
