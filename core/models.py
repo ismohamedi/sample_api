@@ -6,11 +6,11 @@ class Contact(models.Model):
     last_name = models.CharField(max_length=200)
     organisation = models.CharField(max_length=200)
     phone_number = models.CharField(max_length=14)
-    create_on = models.DateTimeField(auto_now_add=True)
-    
+    created_on = models.DateTimeField(auto_now_add=True)
+
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
-        
+
     class Meta:
         managed = True
-        db_table = 'contact'
+        db_table = "contact"

@@ -7,23 +7,30 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Contact',
+            name="Contact",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('first_name', models.CharField(max_length=200)),
-                ('last_name', models.CharField(max_length=200)),
-                ('organisation', models.CharField(max_length=200)),
-                ('phone_number', models.CharField(max_length=14)),
-                ('create_on', models.DateTimeField(auto_now_add=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("first_name", models.CharField(max_length=200)),
+                ("last_name", models.CharField(max_length=200)),
+                ("organisation", models.CharField(max_length=200)),
+                ("phone_number", models.CharField(max_length=14)),
+                ("create_on", models.DateTimeField(auto_now_add=True)),
             ],
             options={
-                'db_table': 'contact',
-                'managed': True,
+                "db_table": "contact",
+                "managed": True,
             },
         ),
     ]

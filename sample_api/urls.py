@@ -1,24 +1,15 @@
-from typing import List
 from django.contrib import admin
 from django.urls import path
 from ninja import NinjaAPI
-from core.views import *
-from core.schema import *
+from core.api import api as sample_api
+from django.conf.urls.static import static
+from django.conf import settings
 
 
-api = NinjaAPI(title="Sample APIs", docs_url="/docs")
+api = NinjaAPI(title="Sample APIs with Django Ninja", docs_url="/docs")
+api.add_router("", sample_api)
 
+urlpatterns = [path("admin/", admin.site.urls), path("api/", api.urls)]
 
-@api.get("/add", response=Contact, tags="Create Contact")
-def add(request, contact: ContactCreate):
-    return create_contact(contact)
-
-@api.get("/get-contact", response=List[Contact], tags="Get Contacts")
-def get_contact(request):
-    return get_contacts(request)
-
-
-urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("api/", api.urls),
-]
+if settings.DEBUG:  # new
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

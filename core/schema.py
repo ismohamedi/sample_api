@@ -7,6 +7,8 @@ class ContactBase(BaseModel):
     first_name: str
     last_name: str
     organisation: str
+    phone_number: str
+
 
 # schema for contact creaton
 class ContactCreate(ContactBase):
