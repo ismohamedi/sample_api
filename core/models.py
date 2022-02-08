@@ -4,8 +4,8 @@ from django.db import models
 class Contact(models.Model):
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
-    organisation = models.CharField(max_length=200)
-    phone_number = models.CharField(max_length=14)
+    organisation = models.CharField(max_length=200, null=True)
+    phone_number = models.CharField(max_length=14, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
