@@ -1,5 +1,5 @@
 # Sample APIs -  RESTful APIs with Django Ninja
-RESTfull APIs With Django Ninja
+RESTful APIs With Django Ninja
 
 Run Project by the following steps:<br>
 1: Clone the Project<br>
