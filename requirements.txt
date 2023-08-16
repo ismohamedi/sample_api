@@ -127,7 +127,7 @@ mkl-random @ file:///opt/concourse/worker/volumes/live/0cda23d8-7460-44b2-7e5d-3
 mkl-service==2.4.0
 mock @ file:///tmp/build/80754af9/mock_1607622725907/work
 more-itertools @ file:///tmp/build/80754af9/more-itertools_1635423142362/work
-mpmath==1.2.1
+mpmath==1.3.0
 msgpack @ file:///opt/concourse/worker/volumes/live/ccdd6ca0-523a-4fde-5a76-cdd4f47c445e/volume/msgpack-python_1612287158191/work
 multipledispatch @ file:///opt/concourse/worker/volumes/live/ae29ad0f-3a64-4ff5-7393-0aa95f2c9f85/volume/multipledispatch_1607574242710/work
 munkres==1.1.4
