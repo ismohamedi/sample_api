@@ -255,7 +255,7 @@ typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1631814937681/w
 ujson @ file:///opt/concourse/worker/volumes/live/258fa87e-ec76-445c-5f9c-fc9523993cd7/volume/ujson_1611259511951/work
 unicodecsv==0.14.1
 Unidecode @ file:///tmp/build/80754af9/unidecode_1614712377438/work
-urllib3==1.26.7
+urllib3==1.26.18
 watchdog @ file:///opt/concourse/worker/volumes/live/3aa0e7d9-c795-4854-41fd-f0b2492c886a/volume/watchdog_1624955010200/work
 wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
 webencodings==0.5.1
